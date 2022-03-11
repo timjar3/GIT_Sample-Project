@@ -1,0 +1,391 @@
+ cloud_tim@Cloud-Tim  ~  ls                                                       ✔  273  11:04:38
+ 10-powerline-symbols.conf   Documents	 GIT_Project_01   newdiv1	    rajdir	 Videos
+ bashscripts101		     Downloads	'#if'		  Pictures	    simple.txt
+ Desktop		     exists	 Music		  Public	    snap
+ directory		     Git_Demo	 newclone_user	  PycharmProjects   Templates
+ cloud_tim@Cloud-Tim  ~  cd GIT_Project_01                                        ✔  274  11:05:45
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01  ls                                        ✔  275  11:06:00
+GIT_Project_01
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01  ls                                        ✔  276  11:06:03
+GIT_01
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01  cd GIT_01                                 ✔  276  11:06:56
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01  ls                                 ✔  277  11:07:22
+GIT_sample-project
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01  cd GIT_sample-project              ✔  278  11:07:26
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project  ls              ✔  279  11:07:33
+css  fonts  img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project  git init        ✔  280  11:07:59
+Initialised empty Git repository in /home/cloud_tim/GIT_Project_01/GIT_01/GIT_sample-project/.git/
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git remote add origin https://github.com/timjar3/GIT_Sample-Project.git
+git branch -M main
+git push -u origin main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/timjar3/GIT_Sample-Project.git'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git remote add origin https://github.com/timjar3/GIT_Sample-Project.git
+fatal: remote origin already exists.
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git remote v
+error: Unknown subcommand: v
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git status  
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	css/
+	fonts/
+	img/
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git add -a            
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalise EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ?  git add .        
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master ✚  git commit -a -m "Commiting all Project files"
+[master (root-commit) 1d952fa] Commiting all Project files
+ 9 files changed, 198 insertions(+)
+ create mode 100755 css/site.css
+ create mode 100755 fonts/segoeuil.ttf
+ create mode 100755 img/cloneWhite.svg
+ create mode 100755 img/deployWhite.svg
+ create mode 100755 img/lightbulbWhite.svg
+ create mode 100755 img/stackWhite.svg
+ create mode 100755 img/successCloudNew.svg
+ create mode 100755 img/tweetThis.svg
+ create mode 100755 index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git st    
+git: 'st' is not a git command. See 'git --help'.
+
+The most similar commands are
+	status
+	reset
+	stage
+	stash
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git status
+On branch master
+nothing to commit, working tree clean
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git log --oneline
+1d952fa (HEAD -> master) Commiting all Project files
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git remote -v    
+origin	https://github.com/timjar3/GIT_Sample-Project.git (fetch)
+origin	https://github.com/timjar3/GIT_Sample-Project.git (push)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git push origin master
+Username for 'https://github.com': timjar3
+Password for 'https://timjar3@github.com': 
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 460.43 KiB | 13.95 MiB/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/timjar3/GIT_Sample-Project.git
+ * [new branch]      master -> master
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 695 bytes | 695.00 KiB/s, done.
+From https://github.com/timjar3/GIT_Sample-Project
+ * branch            master     -> FETCH_HEAD
+   1d952fa..8abd0d0  master     -> origin/master
+Updating 1d952fa..8abd0d0
+Fast-forward
+ AddOn_File | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 AddOn_File
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  ls   ✔  294  11:22:27
+AddOn_File  css  fonts	img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git ls-files          
+AddOn_File
+css/site.css
+fonts/segoeuil.ttf
+img/cloneWhite.svg
+img/deployWhite.svg
+img/lightbulbWhite.svg
+img/stackWhite.svg
+img/successCloudNew.svg
+img/tweetThis.svg
+index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git branch          
+* master
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git branch Dev_main 
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   master  git checkout Dev_main
+Switched to branch 'Dev_main'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git branch           
+* Dev_main
+  master
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git status
+On branch Dev_main
+nothing to commit, working tree clean
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  echo awesome project doing > Extra_file.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git status
+On branch Dev_main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Extra_file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git add . 
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ✚  git commit -a -m "File commit exrta to Dev"
+[Dev_main 9e6042a] File commit exrta to Dev
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Extra_file.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git merge Dev_main 
+Already up-to-date.
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git merge Dev_main master
+Already up-to-date.
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git branch -d master
+Deleted branch master (was 8abd0d0).
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git status          
+On branch Dev_main
+nothing to commit, working tree clean
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git remote -v       
+origin	https://github.com/timjar3/GIT_Sample-Project.git (fetch)
+origin	https://github.com/timjar3/GIT_Sample-Project.git (push)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/timjar3/GIT_Sample-Project.git'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git push origin Dev_main
+Username for 'https://github.com': timjar3
+Password for 'https://timjar3@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'Dev_main' on GitHub by visiting:
+remote:      https://github.com/timjar3/GIT_Sample-Project/pull/new/Dev_main
+remote: 
+To https://github.com/timjar3/GIT_Sample-Project.git
+ * [new branch]      Dev_main -> Dev_main
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git fetch origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 633 bytes | 633.00 KiB/s, done.
+From https://github.com/timjar3/GIT_Sample-Project
+ * branch            master     -> FETCH_HEAD
+   8abd0d0..a789582  master     -> origin/master
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log >> Git_Push,Pull and Merge.txt
+fatal: ambiguous argument 'and': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git log > Git_Push,Pull and Merge.txt 
+fatal: ambiguous argument 'and': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git status
+On branch Dev_main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Git_Push,Pull
+
+nothing added to commit but untracked files present (use "git add" to track)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	Git_Push,Pull  img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  nano Git_Push,Pull 
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  rm Git_Push,Pull 
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  ls
+AddOn_File  css  Extra_file.txt  fonts	img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log > Git_Push,Pull and Merge.txt
+fatal: ambiguous argument 'and': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	Git_Push,Pull  img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git pull origin Dev_main
+fatal: couldn't find remote ref Dev_main
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git push origin Dev_main
+Username for 'https://github.com': timjar3
+Password for 'https://timjar3@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'Dev_main' on GitHub by visiting:
+remote:      https://github.com/timjar3/GIT_Sample-Project/pull/new/Dev_main
+remote: 
+To https://github.com/timjar3/GIT_Sample-Project.git
+ * [new branch]      Dev_main -> Dev_main
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log > Git_Push,Pull and Merge.txt
+fatal: ambiguous argument 'and': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git log
+commit 9e6042aa854ddc44105772fd5b18f983c770f627 (HEAD -> Dev_main, origin/Dev_main)
+Author: mraaj <mraajgi@gmail.com>
+Date:   Fri Mar 11 11:28:34 2022 +0000
+
+    File commit exrta to Dev
+
+commit 8abd0d00dc2a7486eee7a21633a99f89cd5f0590
+Author: timjar3 <84810351+timjar3@users.noreply.github.com>
+Date:   Fri Mar 11 11:21:24 2022 +0000
+
+    Create AddOn_File
+
+commit 1d952fa2ec11a2ef55ae9babc70947ec807951a0
+Author: mraaj <mraajgi@gmail.com>
+Date:   Fri Mar 11 11:13:47 2022 +0000
+
+    Commiting all Project files
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git log > git_logs.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	git_logs.txt  Git_Push,Pull  img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  rm Git_Push,Pull
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  ls
+AddOn_File  css  Extra_file.txt  fonts	git_logs.txt  img  index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git status -s
+?? git_logs.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ?  git add .    
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ✚  git commit -a -m "Git commit"
+[Dev_main 8d1a9bb] Git commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 git_logs.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git push origin Dev_main     
+Username for 'https://github.com': timjar3
+Password for 'https://timjar3@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 532 bytes | 532.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/timjar3/GIT_Sample-Project.git
+   9e6042a..8d1a9bb  Dev_main -> Dev_main
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git pull origin Dev_main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 686 bytes | 686.00 KiB/s, done.
+From https://github.com/timjar3/GIT_Sample-Project
+ * branch            Dev_main   -> FETCH_HEAD
+   8d1a9bb..46e6ec4  Dev_main   -> origin/Dev_main
+Updating 8d1a9bb..46e6ec4
+Fast-forward
+ Sample_push.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Sample_push.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  ls
+AddOn_File  css  Extra_file.txt  fonts	git_logs.txt  img  index.html  Sample_push.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git ls-files          
+AddOn_File
+Extra_file.txt
+Sample_push.html
+css/site.css
+fonts/segoeuil.ttf
+git_logs.txt
+img/cloneWhite.svg
+img/deployWhite.svg
+img/lightbulbWhite.svg
+img/stackWhite.svg
+img/successCloudNew.svg
+img/tweetThis.svg
+index.html
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log >> git_logs.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ●  git add git_logs.txt
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main ✚  git commit -a -m "Git commit 01"
+[Dev_main 88ff029] Git commit 01
+ 1 file changed, 29 insertions(+)
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git pull origin Dev_main        
+From https://github.com/timjar3/GIT_Sample-Project
+ * branch            Dev_main   -> FETCH_HEAD
+Already up-to-date.
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git fetch origin master 
+fatal: couldn't find remote ref master
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git fetch origin Dev_main 
+From https://github.com/timjar3/GIT_Sample-Project
+ * branch            Dev_main   -> FETCH_HEAD
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log
+commit 88ff0295143b6c5945f1655df00476da3cd5e788 (HEAD -> Dev_main)
+Author: mraaj <mraajgi@gmail.com>
+Date:   Fri Mar 11 11:57:02 2022 +0000
+
+    Git commit 01
+
+commit 46e6ec42929437ae73698f33cac57d792bd48694 (origin/Dev_main)
+Author: timjar3 <84810351+timjar3@users.noreply.github.com>
+Date:   Fri Mar 11 11:55:25 2022 +0000
+
+    Create Sample_push.html
+
+commit 8d1a9bb68b2cc9ef0a63993a6f427b6a73797e9a
+Author: mraaj <mraajgi@gmail.com>
+Date:   Fri Mar 11 11:51:23 2022 +0000
+
+    Git commit
+
+commit 9e6042aa854ddc44105772fd5b18f983c770f627
+Author: mraaj <mraajgi@gmail.com>
+Date:   Fri Mar 11 11:28:34 2022 +0000
+
+    File commit exrta to Dev
+
+commit 8abd0d00dc2a7486eee7a21633a99f89cd5f0590
+Author: timjar3 <84810351+timjar3@users.noreply.github.com>
+Date:   Fri Mar 11 11:21:24 2022 +0000
+
+    Create AddOn_File
+
+commit 1d952fa2ec11a2ef55ae9babc70947ec807951a0
+
+zsh: suspended  git log
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  git log --oneline
+88ff029 (HEAD -> Dev_main) Git commit 01
+46e6ec4 (origin/Dev_main) Create Sample_push.html
+8d1a9bb Git commit
+9e6042a File commit exrta to Dev
+8abd0d0 Create AddOn_File
+1d952fa Commiting all Project files
+ cloud_tim@Cloud-Tim  ~/GIT_Project_01/GIT_01/GIT_sample-project   Dev_main  screendump > Output.txt
+/dev/tty0: Permission denied
+screendump: couldn't read /dev/vcsa
+
