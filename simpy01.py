@@ -5,8 +5,10 @@ print("This is awesome")
 
 Gn = "Awsome"
 Bn = "Daddy"
-Print(f"I have {Gn} {BN})
-Print (50+50"% True")
+print(f"I have {Gn} {Bn}")
+a=50
+b=50
+print(f"{a+b}% True")
 
 
 
